@@ -1,0 +1,18 @@
+[package]
+name = "bybit"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+zip = { version = "1.2.0" }
+tracing = "*"
+walkdir = "*"
+flate2 = "1.0"
+regex = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+csv = "*"
+recv = { version = "0.1.0", git = "https://github.com/HFQR/recv", rev = "5e53144114af76460e977d17164e0e777b344379" }
+parquet = { version = "51.0", features = ["default"] }
+parquet_derive = { version = "*" }
+arrow-array = { version = "*" }
